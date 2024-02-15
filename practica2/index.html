@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Inicia NavBar-->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Redes de Datos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="../">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#resumen">About</a>
+                <a class="nav-item nav-link" href="#practicas">Reports</a>
+            </div>
+        </div>
+    </nav>
+    <!--Termina Navbar-->
+
+    <!-- Seccion TITULO de la Práctica-->
+    <section class="py-3" id="scroll-target">
+        <div class="container px-5 my-2">
+            <!-- Post header-->
+            <header class="mb-4">
+                <!-- Post title-->
+                <h1 class="fw-bolder mb-1">Protocolos de comunicacion</h1>
+
+                <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                <img class="img-fluid rounded-circle" width="50px" src="assets/Cesar.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">César Borja Ruiz</div>
+                    <div class="text-muted">Ing. Mecatrónica</div>
+                </div>
+                <img class="img-fluid rounded-circle" width="50px" src="assets/Didier.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">Didier Cabrera Lopez</div>
+                    <div class="text-muted">Ing. Electronica y Cominicaciones</div>
+                </div>
+                <img class="img-fluid rounded-circle" width="50px" src="assets\Felipe.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">Luis Felipe Mendieta Campos</div>
+                    <div class="text-muted">Ing. Mecatrónica</div>
+                </div>
+                <!--Aqui termina etiqueta de alumno-->
+
+                <div class="text-muted fst-italic mt-2 mb-2">Fecha: 22/01/2024</div>
+            </header>
+        </div>
+    </section>
+
+    <!-- Seccion de CONTENIDO de la Práctica-->
+
+    <!-- Seccion de CONTENIDO de la Práctica-->
+    <section>
+        <div class="container px-5">
+
+            <p id="resumen">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
+            <p class="fs-6 mb-4">Los protocolos de comunicación de son fundamentales en cualquier implementación de
+                sistemas inteligentes ya que transmitir datos de un lugar a otro de forma eficiente y rapida es crucial
+                para el funcionamiento de todo tipo de sistemas, programas o aplicaciones de ingenieria</p>
+            <p class="fs-6 mb-4">En la presenta practica se abordaron diferentes formas de transmitir datos entre
+                dispositivos y su reconstruccion.</p>
+
+            <p id="intro">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Introducción -</h2>
+
+            <p class="fs-6 mb-4">Los protocolos de comunicación son la columna vertebral de la conectividad en el mundo
+                digital moderno. Estos conjuntos de reglas y convenciones establecen cómo los dispositivos y sistemas
+                intercambian datos y se comunican entre sí. Su importancia radica en su capacidad para garantizar la
+                interoperabilidad, la fiabilidad y la seguridad en una amplia gama de contextos, desde la comunicación
+                entre computadoras hasta la automatización industrial y los servicios en línea.</p>
+
+            <p id="materiales">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Materiales -</h2>
+            <li>2 Arduino 1</li>
+            <li>Jumpers macho-macho</li>
+            <li>Cables USB tipo B</li>
+            <li>Potenciometro 5k</li>
+            <li>Led </li>
+            <li>Protoboard</li>
+
+            <p id="desarrollo">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+            <p class="fs-6 mb-4">Basandonos en los circuitos presentados en la imagen siguiente, se procedio a realizar
+                el armado fisico de los circuitos con material antes mencionado.</p>
+            <div class="container">
+                <h1 class="fs-6 mb-4">Circuito 1</h1>
+
+                <div class="row">
+                    <div class="col">
+
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="600px"
+                                src="img/Proto1.png" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <li>Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos
+                            (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente
+                            estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento
+                            utilizando el osciloscopio).</li>
+                        <li>Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos
+                            que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</li>
+                        <li>Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento
+                            del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por
+                            segundo,10, 100 y 1000 pulsos por segundo.</li>
+                    </div>
+                </div>
+
+                <h1 class="fs-6 mb-4">Circuito 2</h1>
+
+                <div class="row">
+                    <div class="col">
+
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="600px"
+                                src="img/Proto2.png" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <li>Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un
+                            potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, de
+                            tal forma que podamos ver cada uno de los valores como salidas digitales en los pines del
+                            Arduino.</li>
+                        <li>Utilizando un segundo Arduino, diseñar una función que permita convertir el valor en binario
+                            obtenido de 8 puertos digitales del Arduino en un valor entero en sistema decimal y
+                            mostrarlos en el monitor serial. Utilizar el primer Arduino para generar los valores
+                            digitales en binario y el segundo Arduino utilizarlo para decodificarlos y convertirlos en
+                            un valor decimal.</li>
+                        
+ 
+                    </div>
+                </div>
+
+                <h1 class="fs-6 mb-4">Circuito 3</h1>
+
+                <div class="row">
+                    <div class="col">
+
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="600px"
+                                src="img/Proto3.png" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <li>Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, y los deposite en un arreglo [ ], Finalmente elaborar un código de programación que permita enviar los bits del arreglo en orden y en serie siguiendo las siguientes características:
+                            <li>Iniciar el envió de los datos siempre con una señal HIGH (En total se enviarán 9 datos, el primer bit en HIGH y posteriormente los 8 bits de información).</li>
+                            <li>Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms</li>
+                            <li>Enviar siempre la misma cantidad de bits.</li>
+                        </li>
+                           
+                        <li>Utilizando un segundo Arduino, diseñar una función que permita convertir el valor en binario
+                            obtenido de 8 puertos digitales del Arduino en un valor entero en sistema decimal y
+                            mostrarlos en el monitor serial. Utilizar el primer Arduino para generar los valores
+                            digitales en binario y el segundo Arduino utilizarlo para decodificarlos y convertirlos en
+                            un valor decimal.</li>
+                        
+                            <li>Adicionalmente enviar una trama de caracteres (Hola mundo) y reconstruirlo en el segundo arduino (verificar en el osciloscopio)</li>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <p id="simulacion">
+            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+            <p class="fs-6 mb-4">Para esta practica no fue necesario realizar simulaciones ya que se implementaro
+                directamente los circuitos y codigo en los arduinos fisicos.</p>
+
+
+
+            <p id="diseño">
+            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
+            <p class="fs-6 mb-4">Para esta practica no fue necesario plantear un diseño, solo seguir los diagramas de
+                conexiones y hacer las pruebas pertinentes</p>
+
+
+            <p id="resultados">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+            <h1 class="fs-6 mb-4">Circuito 1</h1>
+
+                <div class="row">
+                    <div class="col">
+
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="300px"
+                                src="img/Resultados1.jpg" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <p class="fs-6 mb-4">Circuito construido, en los siguientes videos se muestra en el primero el envio de X numero de pulsos a una frecuencia f, 
+                            y el conteo del numero de pulsos recibidos, ademas de la variacion de la velocidad de envio para comprobar el limite del dispositivo.  </p>
+                        <p class="fs-6 mb-4">El segundo video muestra el envio de una señal en alto del primer arduino y el segundo contando el tiempo que esa señal duro en alto.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <figure class="mb-4" align="center"><video width="400" height="315"  controls>
+                            <source src="videos/p1.mp4" type="video/mp4">
+                        </video></p></figure>
+                    </div>
+                    <div class="col">
+                        <figure class="mb-4" align="center"><video width="400" height="315"  controls>
+                            <source src="videos/p11.mp4" type="video/mp4">
+                        </video></p></figure>
+                    </div>
+                </div>
+            
+                <h1 class="fs-6 mb-4">Circuito 2</h1>
+
+                <div class="row">
+                    <div class="col">
+
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="315px"
+                                src="img/Resultados2.jpg" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <figure class="mb-4" align="center"><video width="400" height="315"  controls>
+                            <source src="videos/p2.mp4" type="video/mp4">
+                        </video></p></figure>
+                    </div>
+                </div>
+                <p class="fs-6 mb-4"> Para el siguiente circuito, se colocaron 8 cables en 8 salidas digitales del primer arduino para despues conectarse de forma inversa en las entradas digitales del segundo arduino.</p>
+                <p class="fs-6 mb-4">Con esto se logro simular un puerto paralelo, donde se envio el valor del potenciometro un bit por cable y logrando reconstruirlo en el segundo arduino exitosamente.</p>
+                
+                <h1 class="fs-6 mb-4">Circuito 3</h1>
+
+                <div class="row">
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="300px"
+                            src="img/Resultados3.jpg" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <figure class="mb-4" align="center"><video width="400" height="315"  controls>
+                            <source src="videos/p3.mp4" type="video/mp4">
+                        </video></p></figure>
+                    </div>
+                </div>
+                <p class="fs-6 mb-4">Para esta primera parte se realizo el envio a una frecuencia especifica de la cadena de bits obtenidas de la lectura 
+                    analogica del potencimetro al segundo arduino para ser reconstruida, ademas de enviar el mismo valor a un led para observar si el valor es algo o bajo en cada instante </p>
+                <div class="row">
+                    <div class="col">
+                        <figure class="mb-4" align="center"><video width="400" height="315"  controls>
+                            <source src="videos/p33.mp4" type="video/mp4">
+                        </video></p></figure>
+                    </div>
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
+                            src="img/holamundo.jpg" alt="..." /></figure>
+                    </div>
+                </div>
+                <p class="fs-6 mb-4">Adicionalmente se envio una cadena de caracteres en su representacion binaria, ya que cualquier caracter o digito tiene su representacion en binario, se observo el envio de la trama de bits en el osciloscopio y se hizo la lectura en el segundo arduino. </p>
+            
+            
+
+
+
+
+            <p id="conclusiones">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+            <p class="fs-6 mb-4">Las practicas realizadas sirvieron para familiarizarse con los conceptos involucrados en comunicaciones y envio de datos, donde es fundamental tener en cuenta conceptos como la velocidad de envio, de recepcion y sincronizacion para que el envio de los datos sea efectiva.</p>
+
+
+            <p id="referencias">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+            <p> - M. Reyes, Comunicaciones digitales, 1.ª ed. Universidad Autónoma Metropolitana, 2017. [En línea]. Disponible en: https://casadelibrosabiertos.uam.mx/gpd-comunicaciones-digitales.html
+            </p>
+            <p id="descargables">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>    	
+            <a href="files.rar" download="Practicas.rar">Descargar codigos</a>
+
+        </div>
+    </section>
+    <!-- Empieza footer-->
+
+
+    <footer class="text-center text-lg-start navbar-dark bg-dark">
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/insta.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/twitter.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/facebook.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/linkedin.png" style="width: 30px;">
+            </button>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+    
+    <!-- Termina Footer-->
+</body>
+
+</html>
