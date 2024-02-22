@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Inicia NavBar-->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Redes de Datos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="../">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#resumen">About</a>
+                <a class="nav-item nav-link" href="#practicas">Reports</a>
+            </div>
+        </div>
+    </nav>
+    <!--Termina Navbar-->
+
+    <!-- Seccion TITULO de la Práctica-->
+    <section class="py-3" id="scroll-target">
+        <div class="container px-5 my-2">
+            <!-- Post header-->
+            <header class="mb-4">
+                <!-- Post title-->
+                <h1 class="fw-bolder mb-1">Redes de computadora con Switches y Cables</h1>
+
+                <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                <img class="img-fluid rounded-circle" width="50px" src="assets/Cesar.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">César Borja Ruiz</div>
+                    <div class="text-muted">Ing. Mecatrónica</div>
+                </div>
+                <img class="img-fluid rounded-circle" width="50px" src="assets/Didier.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">Didier Cabrera Lopez</div>
+                    <div class="text-muted">Ing. Electronica y Cominicaciones</div>
+                </div>
+                <img class="img-fluid rounded-circle" width="50px" src="assets\Felipe.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">Luis Felipe Mendieta Campos</div>
+                    <div class="text-muted">Ing. Mecatrónica</div>
+                </div>
+                <!--Aqui termina etiqueta de alumno-->
+
+                <div class="text-muted fst-italic mt-2 mb-2">Fecha: 08/02/2024</div>
+            </header>
+        </div>
+    </section>
+
+    <!-- Seccion de CONTENIDO de la Práctica-->
+
+    <!-- Seccion de CONTENIDO de la Práctica-->
+    <section>
+        <div class="container px-5">
+
+            <p id="resumen">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
+            <p class="fs-6 mb-4"> Una red local es la configuracion mas basica que podemos realizar con cables de red y conexiones inalambricas para comunicar dispositivos dentro de dicha red, enviar archivos, acceder a puertos y comunicarse entre si.</p>
+            <p class="fs-6 mb-4">Por lo tanto en esta practica se hiceron varias configuraciones para que dispositivos en una red local puedan accesar a la misma informacion, incluyendo elementos de red fisicos como el switch y el router.</p>
+            <p id="intro">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Introducción -</h2>
+
+            <p class="fs-6 mb-4">Las redes locales (LAN, por sus siglas en inglés) son fundamentales en entornos tanto domésticos como empresariales, permitiendo la interconexión de dispositivos dentro de un área geográfica limitada. Estas redes son vitales para compartir recursos, como archivos, impresoras y conexiones a Internet, así como para facilitar la comunicación y la colaboración entre usuarios. En el diseño, implementación y mantenimiento de una LAN, 
+                la selección adecuada de cables, protocolos y dispositivos de red es esencial para garantizar un rendimiento óptimo y una conectividad confiable.</p>
+            <p class="fs-6 mb-4">En una red local, los cables de red, ya sean directos o cruzados, desempeñan un papel crucial en la conexión de dispositivos entre sí y con otros componentes de red, como switches, routers y puntos de acceso inalámbrico. Los cables directos se utilizan comúnmente para conectar dispositivos finales, como computadoras, impresoras y dispositivos de almacenamiento en red, 
+                a un switch o a un router. Por otro lado, los cables cruzados son útiles para conectar dispositivos similares entre sí, como dos computadoras o dos switches.</p>
+
+            <p id="materiales">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Materiales -</h2>
+           <li>6 computadoras </li>
+           <li>1 switch </li>
+           <li>1 Router</li>
+           <li>Cables cruzados y directos</li>
+           
+
+
+            <p id="desarrollo">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+            <h3>Objetivo General:</h3>
+            <p class="fs-6 mb-4">Conocer, identificar y comprobar el funcionamiento de una red de área local utilizando switches y Router. </p>
+            <p class="fs-6 mb-4">Se llevaron a cabo las siguientes configuraciones en la computadora servidor mediante el programa Xammp</p>
+            <li>
+                Elaborar una red, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y un switch conectando mínimo 3 computadoras y una con servicios de servidor. 
+
+(Comprueba que es posible encontrar dispositivos en la red, puedes usar el comando PING, y comprueba el acceso a la página web del servidor) 
+            </li>
+            <li>
+                Elaborar una red, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y un router conectando mínimo 3 computadoras (alámbrica o inalámbricamente) y una con servicios de servidor. (Comprueba que es posible encontrar dispositivos en la red, puedes usar el comando PING, y comprueba el acceso a la página web del servidor) 
+            </li>
+            <li>
+                Une ambas Redes, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y comprueba el intercambio de archivos. 
+            </li>
+
+            <p id="resultados">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+            <h3 class="fs-6 mb-4">Conexion con Router.</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="300px"
+                                src="img/ipauto.jpg" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
+                            src="img/switch.jpg" alt="..." /></figure>
+                        
+                    </div>
+                </div>
+                <p class="fs-6 mb-4">Se conectaron 3 computadoras directamente al switch, se configuraron las IP's manualmente a partir de la 192.168.0.2, una computadora se eligio como servidor y al acceder a su IP logramos observar la pagina web cargada.</p>
+                <h3 class="fs-6 mb-4">Conexion con Router (alambrica e inalambrica)</h3>
+                <div class="row">
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
+                            src="img/Tplink.jpg" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
+                            src="img/asignacionauto.jpg" alt="..." /></figure>
+                    </div>
+                </div>
+                <p class="fs-6 mb-4">Ahora se conectaron 3 dispositivos alambricamente al router y 3 inalambricamente (mediante la contraseña), ahora con la asignacion automatica de IP y al acceder la IP de la computadora servidor, logramos observar la pagina web cargada. </p>
+        
+  
+            
+            <p id="conclusiones">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+            <p class="fs-6 mb-4"> Se lograron crear las diferentes redes con los elementos fisicos, lo cual constituye la base para cualquier otra redes con mas elementos y complejidad.</p>
+
+            <p id="referencias">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+            <p> - M. Reyes, Comunicaciones digitales, 1.ª ed. Universidad Autónoma Metropolitana, 2017. [En línea]. Disponible en: https://casadelibrosabiertos.uam.mx/gpd-comunicaciones-digitales.html
+            </p>
+            <p id="descargables">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>    	
+            <p class="fs-6 mb-4">No se generaron descargables en esta practica.</p>
+
+        </div>
+    </section>
+    <!-- Empieza footer-->
+
+
+    <footer class="text-center text-lg-start navbar-dark bg-dark">
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/insta.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/twitter.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/facebook.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/linkedin.png" style="width: 30px;">
+            </button>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+    
+    <!-- Termina Footer-->
+</body>
+
+</html>
