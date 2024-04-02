@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Inicia NavBar-->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Redes de Datos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="../">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#resumen">About</a>
+                <a class="nav-item nav-link" href="#practicas">Reports</a>
+            </div>
+        </div>
+    </nav>
+    <!--Termina Navbar-->
+
+    <!-- Seccion TITULO de la Práctica-->
+    <section class="py-3" id="scroll-target">
+        <div class="container px-5 my-2">
+            <!-- Post header-->
+            <header class="mb-4">
+                <!-- Post title-->
+                <h1 class="fw-bolder mb-1">investigacion PHP, JS y HTML</h1>
+
+                <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                <img class="img-fluid rounded-circle" width="50px" src="assets/Cesar.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">César Borja Ruiz</div>
+                    <div class="text-muted">Ing. Mecatrónica</div>
+                </div>
+                <img class="img-fluid rounded-circle" width="50px" src="assets/Didier.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">Didier Cabrera Lopez</div>
+                    <div class="text-muted">Ing. Electronica y Cominicaciones</div>
+                </div>
+                <img class="img-fluid rounded-circle" width="50px" src="assets\Felipe.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">Luis Felipe Mendieta Campos</div>
+                    <div class="text-muted">Ing. Mecatrónica</div>
+                </div>
+                <!--Aqui termina etiqueta de alumno-->
+
+                <div class="text-muted fst-italic mt-2 mb-2">Fecha: 23/03/2024</div>
+            </header>
+        </div>
+    </section>
+
+    <!-- Seccion de CONTENIDO de la Práctica-->
+
+    <!-- Seccion de CONTENIDO de la Práctica-->
+    <section>
+        <div class="container px-5">
+            <h3 class="fs-6 mb-4"> ¿Qué hace la etiqueta input de HTML y como se utilizan?</h3>
+            <p class="fs-6 mb-4">La etiquete input se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario. 
+                Se utiliza una etiqueta llamada "form", seguido de un input, o sea la forma en la que se pide información al usuario.</p>
+
+            <h3 class="fs-6 mb-4">Desarrolla en tu página web un ejemplo de un formulario utilizando la etiqueta input.</h3>
+            <form>
+                <label for="fname">Usuario:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Email:</label><br>
+                <input type="text" id="lname" name="lname">
+                <input type="submit" value="Enviar">
+              </form>
+            
+
+            <h3 class="fs-6 mb-4">Desarrolla en tu página web un muestrario de al menos 10 tipos de inputs diferentes.</h3>
+
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                <br>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+                <br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label>
+                <br>
+                <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+                <br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+                <br>
+                <input type="submit" value="Submit">
+                <br>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <input type="submit" value="Submit">
+              </form>
+              <h3 class="fs-6 mb-4">¿Qué es el lenguaje JavaScript?</h3>
+              <p class="fs-6 mb-4"><p class="fs-6 mb-4">Es un lenguaje de programación interpretado, por lo que no es necesario compilar los programas para ejecutarlos. En otras palabras, los programas escritos con JavaScript se pueden probar directamente en cualquier navegador sin necesidad de procesos intermedios.</p>
+              <h3 class="fs-6 mb-4">¿Para qué sirve el leguaje JS?</h3>
+              <p class="fs-6 mb-4"><p class="fs-6 mb-4">JavaScript es un lenguaje de programación que se utiliza principalmente para crear páginas web dinámicas.</p>
+              <h3 class="fs-6 mb-4">¿A qué se refiere el DOM (Document Object model) en el desarrollo Web?</h3>
+              
+              <p class="fs-6 mb-4"><p class="fs-6 mb-4">El DOM es una representación en memoria de un documento HTML que permite interactuar con los elementos de la página web mediante JavaScript. Permite la modificación y manipulación dinámica de la estructura, contenido y estilo de la página</p>
+              <h3 class="fs-6 mb-4">¿Cuál es la diferencia entre los archivos HTML, CSS y JS?</h3>
+              <li>HTML es el lenguaje de marcado utilizado para crear la estructura y el contenido de una página web</li>
+              <li>CSS es un lenguaje de estilo utilizado para controlar el aspecto y la presentación de una página web creada con HTML. </li>
+              <li>JavaScript es un lenguaje de programación utilizado para agregar interactividad y funcionalidad dinámica a una página web. Permite manipular el contenido HTML y CSS en respuesta a la interacción del usuario, realizar cálculos, validar formularios, realizar solicitudes de red, entre otras muchas funcionalidades.</li>
+
+              <h3 class="fs-6 mb-4">¿Para qué sirve la etiqueta "script>" ?</h3>
+              <p class="fs-6 mb-4">Se utiliza para poder insetar codigo Js en una pagina HTML.</p>
+
+              <h3 class="fs-6 mb-4">¿En qué consiste los 3 métodos para cambiar elementos tipo Tag Name, ID y Class Name con JS?</h3>
+              <li>Para cambiar elementos por su nombre de etiqueta, se utiliza el metodo getElementsByTagName()</li>
+              <li>Para cambiar elementos por su ID, se utiliza el metodo getElementById()</li>
+              <li>Para cambiar elementos por su Clase, se utiliza el metodo getElementByClass()</li>
+              
+              <h3 class="fs-6 mb-4">Elabora en Replit un programa básico “Hola mundo” con JS, describe el funcionamiento y elementos utilizados.</h3>
+              <pre>
+    &lt;script &gt;
+        document.write("Hola Mundo");
+    &lt;script &gt;
+              </pre>
+              <h3 class="fs-6 mb-4">¿Cuál es la sintaxis de la programación en JS?.</h3>
+              <li>No se tienen en cuenta los espacios en blanco y las nuevas líneas</li>
+              <li>Se distinguen las mayúsculas y minúsculas</li>
+              <li>No se define el tipo de las variables</li>
+              <li>No es necesario terminar cada sentencia con el carácter de punto y coma (;)</li>
+              
+              <h3 class="fs-6 mb-4">¿Como se declaran variables en JS?</h3>
+              <p class="fs-6 mb-4">Las variables en JavaScript se crean mediante la palabra reservada “var”. .</p>
+              <pre>
+    &lt;script &gt;
+        var numero_1 = 3;
+        var numero_2 = 1;
+        var resultado = numero_1 + numero_2;
+    &lt;script &gt;     
+               </pre>
+               <h3 class="fs-6 mb-4">¿Como se declaran funciones en JS?</h3>
+               <p class="fs-6 mb-4">Las funciones en JavaScript se definen mediante la palabra reservada function, seguida del nombre de la función. </p>
+               <pre>
+    &lt;script &gt;
+        function suma_y_muestra() {
+        resultado = numero1 + numero2;
+        alert("El resultado es " + resultado);}
+    &lt;script &gt;     
+                </pre>
+                <h3 class="fs-6 mb-4">¿Como se llaman funciones en JS?</h3>
+                <pre>
+    &lt;script &gt;
+        suma_y_muestra(3,4);
+    &lt;script &gt;     
+                </pre>            
+                <h3 class="fs-6 mb-4">¿Cómo declaras una función interna de un HTML con JS y como declaras un documento externo con JS?</h3>
+                <p class="fs-6 mb-4">El código JavaScript se encierra entre etiquetas "script" y se incluye en cualquier parte del documento.  </p>
+                <h3 class="fs-6 mb-4">¿Cuáles ciclos de programación están disponibles en JS?</h3>
+                <li>For</li>
+                <li>While</li>
+                <li>Do while</li>
+
+                <h3 class="fs-6 mb-4">¿Cuáles funciones de condicional están disponibles en JS?</h3>
+                <li>If</li>
+                <li>Switch</li>
+                <li>Operador Ternario ?:</li>
+
+            <p id="referencias">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+            <p>https://uniwebsidad.com/libros/javascript</p>
+            <p>https://www.w3schools.com/js/default.asp</p>
+            <p>https://www.w3schools.com/tags/tag_input.asp</p>
+            <p id="descargables">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>    	
+            <p>No se generaron descargables.</p>
+
+        </div>
+    </section>
+    <!-- Empieza footer-->
+
+
+    <footer class="text-center text-lg-start navbar-dark bg-dark">
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/insta.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/twitter.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/facebook.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/linkedin.png" style="width: 30px;">
+            </button>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+    
+    <!-- Termina Footer-->
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Inicia NavBar-->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Redes de Datos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="../">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#resumen">About</a>
+                <a class="nav-item nav-link" href="#practicas">Reports</a>
+            </div>
+        </div>
+    </nav>
+    <!--Termina Navbar-->
+
+    <!-- Seccion TITULO de la Práctica-->
+    <section class="py-3" id="scroll-target">
+        <div class="container px-5 my-2">
+            <!-- Post header-->
+            <header class="mb-4">
+                <!-- Post title-->
+                <h1 class="fw-bolder mb-1">investigacion PHP, JS y HTML</h1>
+
+                <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                <img class="img-fluid rounded-circle" width="50px" src="assets/Cesar.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">César Borja Ruiz</div>
+                    <div class="text-muted">Ing. Mecatrónica</div>
+                </div>
+                <img class="img-fluid rounded-circle" width="50px" src="assets/Didier.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">Didier Cabrera Lopez</div>
+                    <div class="text-muted">Ing. Electronica y Cominicaciones</div>
+                </div>
+                <img class="img-fluid rounded-circle" width="50px" src="assets\Felipe.jpg" alt="..." />
+                <div class="ms-2">
+                    <div class="fw-bold">Luis Felipe Mendieta Campos</div>
+                    <div class="text-muted">Ing. Mecatrónica</div>
+                </div>
+                <!--Aqui termina etiqueta de alumno-->
+
+                <div class="text-muted fst-italic mt-2 mb-2">Fecha: 23/03/2024</div>
+            </header>
+        </div>
+    </section>
+
+    <!-- Seccion de CONTENIDO de la Práctica-->
+
+    <!-- Seccion de CONTENIDO de la Práctica-->
+    <section>
+        <div class="container px-5">
+            <h3 class="fs-6 mb-4"> ¿Qué es él lenguaje PHP?</h3>
+            <p class="fs-6 mb-4">Es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web, diseñado para interactuar directamente con HTML</p>
+
+            <h3 class="fs-6 mb-4"> ¿Para qué sirve el leguaje PHP?</h3>
+            <p class="fs-6 mb-4">PHP permite generar contenido web dinámicamente, facilita la conexión y la manipulación de bases de datos, 
+                y se utiliza para procesar la información enviada desde formularios web, como registros de usuarios, comentarios, o cualquier otro tipo de entrada de usuario</p>
+
+            <h3 class="fs-6 mb-4"> ¿Cuál es la diferencia entre los archivos HTML y PHP?</h3>
+            <p class="fs-6 mb-4">Mientras que HTML se utiliza para definir la estructura y el contenido de una página web, PHP se utiliza para agregar funcionalidades dinámicas y procesar datos en el servidor antes de que la página se envíe al navegador del usuario.</p>
+
+            Se utiliza para delimitar bloques de código PHP dentro de un archivo HTML u otro documento web. Cuando un servidor web procesa un archivo que contiene estas etiquetas, interpreta todo lo que está dentro de <?php y ?> como código PHP y ejecuta las instrucciones correspondientes.
+            <p class="fs-6 mb-4">Se utiliza para delimitar bloques de código PHP dentro de un archivo HTML u otro documento web. Cuando un servidor web procesa un archivo que contiene estas etiquetas, interpreta todo lo que está dentro de <?php y ?> como código PHP y ejecuta las instrucciones correspondientes.</p>
+
+            <h3 class="fs-6 mb-4"> ¿Cuáles son los pasos y requisitos para cargar un archivo PHP en un servidor?</h3>
+            <li>Crear o editar el archivo PHP, debe tener la extensión ".php" y contener el código PHP con los requerimientos deseados</li>
+            <li>Alojar el servidor en algun servicio de alojamiento web que tenga soporte para PHP, como WebHost, GoDaddy, entre otros.</li>
+            <li>Realizar configuraciones necesarias de permisos o los ajustes necesarios antes de hacer el despliegue del servidor</li>
+            <li>Una vez cargado y configurado, acceder a la URL para probar el funcionamiento de la pagina.</li>
+            <br>
+            
+            <h3 class="fs-6 mb-4">Elabora un programa básico “Hola mundo” con PHP, describe el funcionamiento y elementos utilizados. Inserta el programa embebido con repplit en tu página.</h3>
+            <pre>
+        &lt;?php
+        echo "Este es un ejemplo de código PHP mostrado como texto en HTML.\n";
+        ?&gt;
+            </pre>
+            <h3 class="fs-6 mb-4">¿Para qué sirve la función echo en PHP?</h3>
+            <p class="fs-6 mb-4">Se utiliza para imprimir o mostrar contenido en la salida del navegador web.</p>
+            
+
+            <h3 class="fs-6 mb-4">¿Cuál es la sintaxis de la programación en PHP?</h3>
+            <pre>
+        &lt;?php
+        // Codigo y logica aqui
+        ?&gt;
+            </pre>
+            <h3 class="fs-6 mb-4">¿Cómo se declaran variables en PHP?	</h3>
+            <p class="fs-6 mb-4">  Las variables en PHP comienzan con el símbolo $, seguido del nombre de la variable.
+            </p>
+
+            <pre>
+        &lt;?php
+        $variable = "Hola";
+        ?&gt;
+            </pre>
+            <h3 class="fs-6 mb-4">¿Cómo se declaran funciones en PHP?		</h3>
+            <p class="fs-6 mb-4">Las variables en PHP comienzan con el símbolo $, seguido del nombre de la variable.</p>
+            <pre>
+        &lt;?php
+        function saludar($nombre) {
+            echo "¡Hola, $nombre!";
+        }
+        ?&gt;
+            </pre>
+             <h3 class="fs-6 mb-4">¿Cómo se llaman funciones en PHP?</h3>
+             <p class="fs-6 mb-4">Para llamar a una función en PHP, simplemente utiliza el nombre de la función seguido de paréntesis.</p>
+             <p class="fs-6 mb-4">saludar("Juan");</p>
+             <h3 class="fs-6 mb-4">¿Cuáles ciclos de programación están disponibles en PHP?</h3>
+             <li>While</li>
+             <li>Do while </li>
+             <li>For</li>
+             <li>Foreach</li>
+             <h3 class="fs-6 mb-4">¿Cuáles funciones de condicional están disponibles en PHP?</h3>
+             <li>If</li>
+             <li>Else</li>
+             <li>Elseif</li>
+             <li>Switch</li>
+             <h3 class="fs-6 mb-4">Identifica los diferentes métodos reservados para el tratamiento de archivos.</h3>
+             <li>fopen(): Se utiliza para abrir un archivo y devuelve un identificador de archivo que se utilizará en otras funciones para realizar operaciones en el archivo abierto.</li>
+             <li>fopen(): Se utiliza para abrir un archivo y devuelve un identificador de archivo que se utilizará en otras funciones para realizar operaciones en el archivo abierto.</li>
+             <li>fwrite(): Se utiliza para escribir datos en un archivo abierto en modo de escritura.</li>
+             <li>fread(): Se utiliza para leer datos desde un archivo abierto en modo de lectura.</li>
+             <li>fgets(): Se utiliza para leer una línea de texto desde un archivo abierto en modo de lectura.</li>
+             <li>fgetc(): Se utiliza para leer un carácter desde un archivo abierto en modo de lectura.</li>
+             <li>feof(): Se utiliza para verificar si se ha alcanzado el final de un archivo después de leer.</li>
+             <li>filesize(): Se utiliza para obtener el tamaño de un archivo en bytes.</li>
+             <li>file_exists(): Se utiliza para verificar si un archivo existe en el sistema de archivos.</li>
+             <li>is_file(): Se utiliza para verificar si una ruta es un archivo regular.</li>
+             <li>is_dir(): Se utiliza para verificar si una ruta es un directorio.</li>
+             <li>rename(): Se utiliza para cambiar el nombre de un archivo o directorio.</li>
+             <li>unlink(): Se utiliza para eliminar un archivo.</li>
+             <h3 class="fs-6 mb-4">Elabora un programa básico con PHP que permita crear un archivo de texto en el servidor, describe el funcionamiento y elementos utilizados. Inserta el programa embebido con repplit en tu página.</h3>
+             <pre>
+        &lt;?php
+        $file = fopen("archivo.txt","w") or die("No fue posible crear el archivo");
+        $txt = "Holaaaaaaa";
+        fwrite($file,$txt);
+        fclose($file);
+        ?&gt;
+                    </pre>
+            <h3 class="fs-6 mb-4">¿Cómo se utiliza el método Open/Read en el manejo de archivos con PHP?</h3>
+            <p class="fs-6 mb-4">Para utilizar el método Open/Read en el manejo de archivos con PHP, se utiliza la función "fopen" con el modo "r" (lectura), seguida de la función "fgets" o "fread" para leer el contenido del archivo y la función "fclose" para cerrar el archivo</p>
+            <h3 class="fs-6 mb-4">¿Cómo se utiliza el método Create/Write en el manejo de archivos con PHP?</h3>      
+            <p class="fs-6 mb-4">Para utilizar el método Create/Write en el manejo de archivos con PHP, se utiliza la función "fopen" con el modo "w" (escritura), seguida de la función "fwrite" o "fput" para escribir el contenido en el archivo y la función "fclose" para cerrar el archivo.
+            </p>
+            <h3 class="fs-6 mb-4">Finamente, concluye cuales serían las ventajas de integrar PHP en una página web.</h3>
+            <p  class="fs-6 mb-4">PHP permite crear páginas web dinámicas que pueden responder a las acciones del usuario y mostrar contenido personalizado. Así mismo es compatible con una amplia gama de sistemas operativos y servidores web y es fácil de utilizar para aquellos que tienen experiencia con HTML. </p>
+
+
+            <p id="referencias">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+            <p> https://www.php.net/manual/es/intro-whatis.php 
+            </p>
+            <p id="descargables">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>    	
+            <p>No se generaron descargables.</p>
+
+        </div>
+    </section>
+    <!-- Empieza footer-->
+
+
+    <footer class="text-center text-lg-start navbar-dark bg-dark">
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/insta.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/twitter.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/facebook.png" style="width: 30px;">
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle" style="background-color: #54456b;">
+                <img src="assets/linkedin.png" style="width: 30px;">
+            </button>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+    
+    <!-- Termina Footer-->
+</body>
+
+</html>
