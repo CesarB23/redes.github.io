@@ -33,7 +33,7 @@
             <!-- Post header-->
             <header class="mb-4">
                 <!-- Post title-->
-                <h1 class="fw-bolder mb-1">Configuración de Red Local</h1>
+                <h1 class="fw-bolder mb-1">Envió PHP</h1>
 
                 <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                 <img class="img-fluid rounded-circle" width="50px" src="assets/Cesar.jpg" alt="..." />
@@ -53,7 +53,7 @@
                 </div>
                 <!--Aqui termina etiqueta de alumno-->
 
-                <div class="text-muted fst-italic mt-2 mb-2">Fecha: 08/02/2024</div>
+                <div class="text-muted fst-italic mt-2 mb-2">Fecha: 22/02/2024</div>
             </header>
         </div>
     </section>
@@ -66,40 +66,45 @@
 
             <p id="resumen">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
-            <p class="fs-6 mb-4"> Una red local es la configuracion mas basica que podemos realizar con cables de red y conexiones inalambricas para comunicar dispositivos dentro de dicha red, enviar archivos, acceder a puertos y comunicarse entre si.</p>
-            <p class="fs-6 mb-4">Por lo tanto en esta practica se hiceron varias configuraciones para que dispositivos en una red local puedan accesar a la misma informacion.</p>
+            <p class="fs-6 mb-4"> PHP es uno de los lenguajes de alto nivel que podemos utilizar para enviar y recibir datos, configurar interfaces para interactuar con informacion.</p>
+            <p class="fs-6 mb-4">Eb esta practica se tuvo el primer acercamiento a interactuar con PHP, enviar datos y observar su modificacion en tiempo real.</p>
             <p id="intro">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Introducción -</h2>
 
-            <p class="fs-6 mb-4">Las redes locales (LAN, por sus siglas en inglés) son fundamentales en entornos tanto domésticos como empresariales, permitiendo la interconexión de dispositivos dentro de un área geográfica limitada. Estas redes son vitales para compartir recursos, como archivos, impresoras y conexiones a Internet, así como para facilitar la comunicación y la colaboración entre usuarios. En el diseño, implementación y mantenimiento de una LAN, 
-                la selección adecuada de cables, protocolos y dispositivos de red es esencial para garantizar un rendimiento óptimo y una conectividad confiable.</p>
-            <p class="fs-6 mb-4">En una red local, los cables de red, ya sean directos o cruzados, desempeñan un papel crucial en la conexión de dispositivos entre sí y con otros componentes de red, como switches, routers y puntos de acceso inalámbrico. Los cables directos se utilizan comúnmente para conectar dispositivos finales, como computadoras, impresoras y dispositivos de almacenamiento en red, 
-                a un switch o a un router. Por otro lado, los cables cruzados son útiles para conectar dispositivos similares entre sí, como dos computadoras o dos switches.</p>
+            <p class="fs-6 mb-4">PHP es un lenguaje de programación ampliamente utilizado para el desarrollo web, conocido por su facilidad de uso y versatilidad. Se utiliza principalmente en la creación de sitios web dinámicos y aplicaciones web. Además de su potencial en el ámbito web, PHP también puede interactuar con datos de sensores o dispositivos externos, ya sea a través de bibliotecas específicas o mediante la comunicación con interfaces de hardware. Esto permite a los desarrolladores integrar funcionalidades de adquisición de datos en tiempo real, 
+                control de dispositivos y monitoreo remoto dentro de sus aplicaciones web, lo que abre un amplio abanico de posibilidades para la automatización, la monitorización y la interacción con el entorno físico a través de la web.</p>
 
             <p id="materiales">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Materiales -</h2>
-           <li>Cable de red directo</li>
-           <li>Cable de red cruzado</li>
-           <li>Varios dispositivos con conexion alambrica e inalambrica</li>
-           
-
+           <li>computadora</li>
+           <li>Programa XAMPP</li>
+            <li>ESP 32</li>
 
             <p id="desarrollo">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
             <h3>Objetivo General:</h3>
-            <p class="fs-6 mb-4">Conocer, investigar e identificar los pasos para configurar una red local y el acceso a recursos de un equipo en red. </p>
-            <p class="fs-6 mb-4">Se llevaron a cabo las siguientes configuraciones en la computadora servidor mediante el programa Xammp</p>
+            <p class="fs-6 mb-4">Conocer, identificar y comprobar el funcionamiento de una página web con programación PHP, Servidor Local, un servidor en la nube y envió de datos con el módulo ESP8266</p>
+            <p class="fs-6 mb-4">Para ello se desarrollaron los siguientes objetivos especificos:</p>
             <li>
-                Comprueba el acceso al sitio web montado en el servidor local desde 3 dispositivos distintos (para acceder es necesario estar en la misma red).
+                Utilizando bloc de notas desarrollar una página web con código PHP que permita actualizar el valor de un sensor. Recuerda guardar el archivo como “index.php”.
             </li>
             <li>
-                Elabora un mapa de accesos de equipos y sus respectivas IPs en la Red de las computadoras de tus demás compañeros.
+                Utilizando XAMPP, coloca la pagina web en el servidor local y visualízala en el explorador, corrobora el correcto funcionamiento para actualizar los valores de la página.
             </li>
             <li>
-                Repite los mismos pasos ahora utilizando el cable directo y conectándote a la red de la universidad cableada.
+                Utilizando otra computadora y una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente URL con la IP correcta:
+192.168.0.X/?A=1&B=3
+
             </li>
             <li>
-                Repite los mismos pasos, pero ahora con el cable cruzado entre dos equipos, configurando la IP de ambos equipos a 192.168.0.1 (un equipo) y el 192.168.0.2 (el segundo equipo).
+                Utilizando un servidor en la nube, sube tu página Web de PHP, visualízala en el explorador con la dirección Web y corrobora su funcionamiento directo desde el explorador. 
+            </li>
+            <li>
+                Utilizando el NodeMCU y el ejemplo de GET, realiza una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente petición (Request) con la IP correcta:
+192.168.0.X/?A=1&B=3
+            </li>
+            <li>
+                Utilizando un servidor en la nube, sube tu página Web de PHP, utilizando el NodeMCU y el ejemplo de GET, realiza una conexión a la dirección Web y corrobora el funcionamiento del sistema directo desde el explorador. 
             </li>
 
             <p id="resultados">
@@ -109,75 +114,65 @@
                 <div class="row">
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                                src="img/ip1.png" alt="..." /></figure>
+                                src="img/xampp.jpg" alt="..." /></figure>
+                        <p>Al cargar el codigo en la carpeta htdocs del servidor XAMPP podemos acceder a el mediante la IP asignada por el router, donde verificamos que efectivamente se muestre la pagina para posteriormente poder cambiar los valores de las variables 
+                            .
+                        </p>
                     </div>
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                            src="img/xampp.png" alt="..." /></figure>
+                            src="img/codigo.jpg" alt="..." /></figure>
                         
                     </div>
                 </div>
-
+                <h3 class="fs-6 mb-4">Segunda Parte</h3>
                 <div class="row">
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
+                            src="img/localphp.jpg" alt="..." /></figure>
+                    </div>
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="200px"
-                            src="img/3dispo.jpg" alt="..." /></figure>
-                    </div>
-                    <div class="col">
-                            <p class="fs-6 mb-4">Al abrir el puerto 80 del dispositivo Host y escribir la IP se logro acceder exitosamente al contenido mediante 3 dispositivos diferentes.</p>
-                    </div>
-                </div>
-                    <h3>Segunda parte</h3>
-                 <div class="row">
-                    <div class="col">
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="250px"
-                                src="img/eth1.jpg" alt="..." /></figure>
-                    </div>
-                    <div class="col">
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="250px"
-                            src="img/eth2.jpg" alt="..." /></figure>
-                        
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="250px"
-                            src="img/eth3.jpg" alt="..." /></figure>
-                    </div>
-                    <div class="col">
-                            <p class="fs-6 mb-4">Al conectar la la computadora a la red de la universidad se obtuvo la IP de Ethernet para acceder a ella en 3 dispositivos distintos.</p>
+                            src="img/texto.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Al hacer el envio de los datos verificamos que se actualizan correctamente en el servidor y se escriben en el archivo hola.txt.</p>
                     </div>
                 </div>
                 <h3>Tercera parte</h3>
-
-                <div class="row">
+                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="800px"
+                    src="img/frank.jpg" alt="..." /></figure>
                     <div class="col">
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="250px"
-                                src="img/cruz3.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Para este ejemplo, una computadora sirvio como servidor y otra como la que realiza la peticion, ambas conectadas a un red de internet celular para simular la red local.</p>
+                    
+                    <h3>Cuarta parte</h3>
+                 <div class="row">
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
+                                src="img/webphp.jpg" alt="..." /></figure>
                     </div>
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="250px"
-                            src="img/cruz2.jpg" alt="..." /></figure>
-                        
+                            src="img/textoweb.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Al hacer el envio de los datos a la pagina subida en 000webhost verificamos que se actualizan correctamente y se escriben en el archivo hola.txt.</p>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col">
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="250px"
-                                src="img/cruz1.jpg" alt="..." /></figure>
-                    </div>
-                    <div class="col">
-                        <p>Se utilizo el cable cruzado para comunicar 2 computadoras, se configuraron las IP respectivas en cada dispositivo y se logro acceder al contenido al escribir las IP.</p>
-                        
-                    </div>
-                </div>
+                
+                <h3>Quinta parte</h3>
+                <p>Para esta parte lo que se realizo fue cambiar el metodo GET por POST para enviar los datos al servidor sin la necesidad de escribirlos en la URL, solo se cambio el metodo GET por POST en el codigo de PHP.</p>
+                <figure class="mb-4" align="center"><video width="600" height="450"  controls>
+                    <source src="videos/local.mp4" type="video/mp4">
+                </video></p></figure>
+
+                <h3>Sexta Parte</h3>
+                <p>Para enviar los datos al servidor en la nube solo es necesario cambiar la URL donde esta alojado el servicio.</p>
+                <figure class="mb-4" align="center"><video width="600" height="450"  controls>
+                    <source src="videos/nube.mp4" type="video/mp4">
+                </video></p></figure>
   
             
             <p id="conclusiones">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-            <p class="fs-6 mb-4">Se logro tener un primer acercamiento a los diferentes tipos de redes, siendo la local la mas sencilla y con la que interactuamos a menudo en nuestra vida cotidiana, tambien se comprobo directamente el funcionamiento de los cables de la practica pasada.</p>
+            <p class="fs-6 mb-4">Esta practica sirvio bastante para tener un primer acercamiento a como pueden interactuar dipositivos fisicos, con servicios web y otros elementos para poder tener aplicaciones web que obtengan y manejen datos de muchas fuentes.</p>
 
 
             <p id="referencias">
@@ -186,7 +181,7 @@
             </p>
             <p id="descargables">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>    	
-            <p class="fs-6 mb-4">No se generaron descargables en esta practica.</p>
+            <a href="files/POSTESp32.rar" download="Practica.rar">Descargar codigos</a>
 
         </div>
     </section>

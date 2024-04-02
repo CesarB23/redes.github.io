@@ -33,7 +33,7 @@
             <!-- Post header-->
             <header class="mb-4">
                 <!-- Post title-->
-                <h1 class="fw-bolder mb-1">Redes de computadora con Switches y Cables</h1>
+                <h1 class="fw-bolder mb-1">Wifi ESP8266 Entradas y Salidas Digitales</h1>
 
                 <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                 <img class="img-fluid rounded-circle" width="50px" src="assets/Cesar.jpg" alt="..." />
@@ -53,7 +53,7 @@
                 </div>
                 <!--Aqui termina etiqueta de alumno-->
 
-                <div class="text-muted fst-italic mt-2 mb-2">Fecha: 08/02/2024</div>
+                <div class="text-muted fst-italic mt-2 mb-2">Fecha: 07/03/2024</div>
             </header>
         </div>
     </section>
@@ -66,84 +66,151 @@
 
             <p id="resumen">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
-            <p class="fs-6 mb-4"> Una red local es la configuracion mas basica que podemos realizar con cables de red y conexiones inalambricas para comunicar dispositivos dentro de dicha red, enviar archivos, acceder a puertos y comunicarse entre si.</p>
-            <p class="fs-6 mb-4">Por lo tanto en esta practica se hiceron varias configuraciones para que dispositivos en una red local puedan accesar a la misma informacion, incluyendo elementos de red fisicos como el switch y el router.</p>
+            <p class="fs-6 mb-4"> El microcontrolador ESP32, un popular dispositivo para la programación de IOT ya que incluye Wifi y Bluetooth y su rendimiento superior a dispositivos como Arduino 1, lo vuelven una opcion muy comun para desarrollar proyectos un poco más elaborados.</p>
+            <p class="fs-6 mb-4">En esta practica se realizaron sencillas practicas para probar esta placa</p>
             <p id="intro">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Introducción -</h2>
 
-            <p class="fs-6 mb-4">Las redes locales (LAN, por sus siglas en inglés) son fundamentales en entornos tanto domésticos como empresariales, permitiendo la interconexión de dispositivos dentro de un área geográfica limitada. Estas redes son vitales para compartir recursos, como archivos, impresoras y conexiones a Internet, así como para facilitar la comunicación y la colaboración entre usuarios. En el diseño, implementación y mantenimiento de una LAN, 
-                la selección adecuada de cables, protocolos y dispositivos de red es esencial para garantizar un rendimiento óptimo y una conectividad confiable.</p>
-            <p class="fs-6 mb-4">En una red local, los cables de red, ya sean directos o cruzados, desempeñan un papel crucial en la conexión de dispositivos entre sí y con otros componentes de red, como switches, routers y puntos de acceso inalámbrico. Los cables directos se utilizan comúnmente para conectar dispositivos finales, como computadoras, impresoras y dispositivos de almacenamiento en red, 
-                a un switch o a un router. Por otro lado, los cables cruzados son útiles para conectar dispositivos similares entre sí, como dos computadoras o dos switches.</p>
+            <p class="fs-6 mb-4">
+                El ESP32 es un microcontrolador de bajo costo y alto rendimiento desarrollado por Espressif Systems, equipado con un procesador de doble núcleo Xtensa LX6 de hasta 240 MHz, memoria RAM interna y externa, conectividad Wi-Fi y Bluetooth integrada, y una amplia gama de periféricos. Compatible con entornos de desarrollo como Arduino IDE y PlatformIO, ofrece soporte para una variedad de protocolos de comunicación y una gran cantidad de librerías disponibles. Sus ventajas incluyen potencia y rendimiento mejorados, conectividad integrada y una amplia comunidad de usuarios, mientras que sus desventajas pueden incluir un consumo de energía relativamente alto y una complejidad adicional en comparación con microcontroladores más simples. En general, el ESP32 es una opción versátil y poderosa para una variedad de aplicaciones, desde proyectos simples hasta sistemas complejos de IoT..</p>
 
             <p id="materiales">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Materiales -</h2>
-           <li>6 computadoras </li>
-           <li>1 switch </li>
-           <li>1 Router</li>
-           <li>Cables cruzados y directos</li>
-           
-
+           <li>Computadora</li>
+           <li>Arduino IDE</li>
+            <li>ESP 32</li>
+            <li>LED, resistencia de 220 Ohms<li>
+                <li>4 Botones y 4 resistencias de 1Khom</li>
+            <li>Protoboard y cables </li>
 
             <p id="desarrollo">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
             <h3>Objetivo General:</h3>
-            <p class="fs-6 mb-4">Conocer, identificar y comprobar el funcionamiento de una red de área local utilizando switches y Router. </p>
-            <p class="fs-6 mb-4">Se llevaron a cabo las siguientes configuraciones en la computadora servidor mediante el programa Xammp</p>
+            <p class="fs-6 mb-4">Conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo NodeMCU ESP8266 o ESP32.</p>
+            <p class="fs-6 mb-4">Para ello se desarrollaron los siguientes objetivos especificos:</p>
             <li>
-                Elaborar una red, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y un switch conectando mínimo 3 computadoras y una con servicios de servidor. 
-
-(Comprueba que es posible encontrar dispositivos en la red, puedes usar el comando PING, y comprueba el acceso a la página web del servidor) 
+                Desarrollar un programa de encendido de un LED mediante programación.
             </li>
             <li>
-                Elaborar una red, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y un router conectando mínimo 3 computadoras (alámbrica o inalámbricamente) y una con servicios de servidor. (Comprueba que es posible encontrar dispositivos en la red, puedes usar el comando PING, y comprueba el acceso a la página web del servidor) 
+                Desarrollar un programa de apagado de un LED mediante programación.
             </li>
             <li>
-                Une ambas Redes, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y comprueba el intercambio de archivos. 
+                Desarrollar un programa de encendido y apagado de un LED mediante retardos.
+            </li>
+            <li>
+                Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones.
+            </li>
+            <li>
+                Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR.
+            </li>
+            <li>
+                Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.
             </li>
 
             <p id="resultados">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-            <h3 class="fs-6 mb-4">Conexion con Router.</h3>
+            <h3 class="fs-6 mb-4">Primera Parte</h3>
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="300px"
-                                src="img/ipauto.jpg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
+                                src="img/encendidoled.jpg" alt="..." /></figure>
+                        
                     </div>
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                            src="img/switch.jpg" alt="..." /></figure>
+                            src="img/encendidoledsim.jpg" alt="..." /></figure>
                         
                     </div>
                 </div>
-                <p class="fs-6 mb-4">Se conectaron 3 computadoras directamente al switch, se configuraron las IP's manualmente a partir de la 192.168.0.2, una computadora se eligio como servidor y al acceder a su IP logramos observar la pagina web cargada.</p>
-                <h3 class="fs-6 mb-4">Conexion con Router (alambrica e inalambrica)</h3>
+               <p>Podemos observar el led siempre en encendido en el Pin digital 12</p>
+
+                <h3 class="fs-6 mb-4">Segunda Parte</h3>
                 <div class="row">
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                            src="img/Tplink.jpg" alt="..." /></figure>
+                            src="img/encendidoledsim.jpg" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="200px"
+                            src="img/apagadoled.jpg" alt="..." /></figure>
+                           
+                    </div>
+                </div>
+                <p>Podemos observar el led siempre en apagado en el Pin digital 12</p>
+
+                <h3 class="fs-6 mb-4">Tercera parte</h3>
+                <div class="row">
+                    <div class="col">
+                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                            <source src="videos/blink.mp4" type="video/mp4">
                     </div>
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                            src="img/asignacionauto.jpg" alt="..." /></figure>
+                            src="img/encendidoledsim.jpg" alt="..." /></figure>
                     </div>
                 </div>
-                <p class="fs-6 mb-4">Ahora se conectaron 3 dispositivos alambricamente al router y 3 inalambricamente (mediante la contraseña), ahora con la asignacion automatica de IP y al acceder la IP de la computadora servidor, logramos observar la pagina web cargada. </p>
-        
+                <p>Podemos observar el led encendiendo y apagado con un delay de 1 seg en el Pin digital 12</p>
+
+                    <h3  class="fs-6 mb-4">Cuarta parte</h3>
+                 <div class="row">
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
+                                src="img/boton.jpg" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                            <source src="videos/boton.mp4" type="video/mp4">
+            
+                    </div>
+                </div>
+                <p class="fs-6 mb-4">Podemos observar que al presionar el boton se enciede el led, en vez de usar la resistencia fisica se uso la resistencia pullup incluida en el esp32.</p>
+
+                <h3  class="fs-6 mb-4">Quinta parte</h3>
+                <div class="row">
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
+                                src="img/OR.jpg" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                            <source src="videos/OR.mp4" type="video/mp4">
+            
+                    </div>
+                </div>
+                <p class="fs-6 mb-4">Podemos observar el comportamiento de una compuerta OR, solo que se uso como pull up en vez de pull down.</p>
+                
+
+
+                <h3  class="fs-6 mb-4">Sexta parte</h3>
+                <div class="row">
+                    <div class="col">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
+                                src="img/OR.jpg" alt="..." /></figure>
+                    </div>
+                    <div class="col">
+                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                            <source src="videos/AND.mp4" type="video/mp4">
+            
+                    </div>
+                </div>
+                <p class="fs-6 mb-4">Podemos observar el comportamiento de una compuerta AND, solo que se uso como pull up en vez de pull down.</p>
+
+               
   
             
             <p id="conclusiones">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-            <p class="fs-6 mb-4"> Se lograron crear las diferentes redes con los elementos fisicos, lo cual constituye la base para cualquier otra redes con mas elementos y complejidad.</p>
+            <p class="fs-6 mb-4">Estos sencillos circuitos sirvieron para repasar conceptos basicos de conexiones y programacion del ESP32 para posteriormente diseñar circuitos e implementar codigos para complejos</p>
+
 
             <p id="referencias">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-            <p> - M. Reyes, Comunicaciones digitales, 1.ª ed. Universidad Autónoma Metropolitana, 2017. [En línea]. Disponible en: https://casadelibrosabiertos.uam.mx/gpd-comunicaciones-digitales.html
+            <p> ESP32 Hardware Reference. https://demo-dijiudu.readthedocs.io/en/latest/hw-reference/
             </p>
             <p id="descargables">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>    	
-            <p class="fs-6 mb-4">No se generaron descargables en esta practica.</p>
+            <a href="files/codigos.rar" download="Practicas.rar">Descargar codigos</a>
 
         </div>
     </section>
