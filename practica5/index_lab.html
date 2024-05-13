@@ -33,7 +33,7 @@
             <!-- Post header-->
             <header class="mb-4">
                 <!-- Post title-->
-                <h1 class="fw-bolder mb-1">Wifi ESP8266 Entradas y Salidas Digitales</h1>
+                <h1 class="fw-bolder mb-1">Envió PHP</h1>
 
                 <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                 <img class="img-fluid rounded-circle" width="50px" src="assets/Cesar.jpg" alt="..." />
@@ -53,7 +53,7 @@
                 </div>
                 <!--Aqui termina etiqueta de alumno-->
 
-                <div class="text-muted fst-italic mt-2 mb-2">Fecha: 07/03/2024</div>
+                <div class="text-muted fst-italic mt-2 mb-2">Fecha: 22/02/2024</div>
             </header>
         </div>
     </section>
@@ -66,45 +66,45 @@
 
             <p id="resumen">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
-            <p class="fs-6 mb-4"> El microcontrolador ESP32, un popular dispositivo para la programación de IOT ya que incluye Wifi y Bluetooth y su rendimiento superior a dispositivos como Arduino 1, lo vuelven una opcion muy comun para desarrollar proyectos un poco más elaborados.</p>
-            <p class="fs-6 mb-4">En esta practica se realizaron sencillas practicas para probar esta placa</p>
+            <p class="fs-6 mb-4"> PHP es uno de los lenguajes de alto nivel que podemos utilizar para enviar y recibir datos, configurar interfaces para interactuar con informacion.</p>
+            <p class="fs-6 mb-4">Eb esta practica se tuvo el primer acercamiento a interactuar con PHP, enviar datos y observar su modificacion en tiempo real.</p>
             <p id="intro">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Introducción -</h2>
 
-            <p class="fs-6 mb-4">
-                El ESP32 es un microcontrolador de bajo costo y alto rendimiento desarrollado por Espressif Systems, equipado con un procesador de doble núcleo Xtensa LX6 de hasta 240 MHz, memoria RAM interna y externa, conectividad Wi-Fi y Bluetooth integrada, y una amplia gama de periféricos. Compatible con entornos de desarrollo como Arduino IDE y PlatformIO, ofrece soporte para una variedad de protocolos de comunicación y una gran cantidad de librerías disponibles. Sus ventajas incluyen potencia y rendimiento mejorados, conectividad integrada y una amplia comunidad de usuarios, mientras que sus desventajas pueden incluir un consumo de energía relativamente alto y una complejidad adicional en comparación con microcontroladores más simples. En general, el ESP32 es una opción versátil y poderosa para una variedad de aplicaciones, desde proyectos simples hasta sistemas complejos de IoT..</p>
+            <p class="fs-6 mb-4">PHP es un lenguaje de programación ampliamente utilizado para el desarrollo web, conocido por su facilidad de uso y versatilidad. Se utiliza principalmente en la creación de sitios web dinámicos y aplicaciones web. Además de su potencial en el ámbito web, PHP también puede interactuar con datos de sensores o dispositivos externos, ya sea a través de bibliotecas específicas o mediante la comunicación con interfaces de hardware. Esto permite a los desarrolladores integrar funcionalidades de adquisición de datos en tiempo real, 
+                control de dispositivos y monitoreo remoto dentro de sus aplicaciones web, lo que abre un amplio abanico de posibilidades para la automatización, la monitorización y la interacción con el entorno físico a través de la web.</p>
 
             <p id="materiales">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Materiales -</h2>
-           <li>Computadora</li>
-           <li>Arduino IDE</li>
+           <li>computadora</li>
+           <li>Programa XAMPP</li>
             <li>ESP 32</li>
-            <li>LED, resistencia de 220 Ohms<li>
-                <li>4 Botones y 4 resistencias de 1Khom</li>
-            <li>Protoboard y cables </li>
 
             <p id="desarrollo">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
             <h3>Objetivo General:</h3>
-            <p class="fs-6 mb-4">Conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo NodeMCU ESP8266 o ESP32.</p>
+            <p class="fs-6 mb-4">Conocer, identificar y comprobar el funcionamiento de una página web con programación PHP, Servidor Local, un servidor en la nube y envió de datos con el módulo ESP8266</p>
             <p class="fs-6 mb-4">Para ello se desarrollaron los siguientes objetivos especificos:</p>
             <li>
-                Desarrollar un programa de encendido de un LED mediante programación.
+                Utilizando bloc de notas desarrollar una página web con código PHP que permita actualizar el valor de un sensor. Recuerda guardar el archivo como “index.php”.
             </li>
             <li>
-                Desarrollar un programa de apagado de un LED mediante programación.
+                Utilizando XAMPP, coloca la pagina web en el servidor local y visualízala en el explorador, corrobora el correcto funcionamiento para actualizar los valores de la página.
             </li>
             <li>
-                Desarrollar un programa de encendido y apagado de un LED mediante retardos.
+                Utilizando otra computadora y una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente URL con la IP correcta:
+192.168.0.X/?A=1&B=3
+
             </li>
             <li>
-                Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones.
+                Utilizando un servidor en la nube, sube tu página Web de PHP, visualízala en el explorador con la dirección Web y corrobora su funcionamiento directo desde el explorador. 
             </li>
             <li>
-                Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR.
+                Utilizando el NodeMCU y el ejemplo de GET, realiza una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente petición (Request) con la IP correcta:
+192.168.0.X/?A=1&B=3
             </li>
             <li>
-                Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.
+                Utilizando un servidor en la nube, sube tu página Web de PHP, utilizando el NodeMCU y el ejemplo de GET, realiza una conexión a la dirección Web y corrobora el funcionamiento del sistema directo desde el explorador. 
             </li>
 
             <p id="resultados">
@@ -114,103 +114,74 @@
                 <div class="row">
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                                src="img/encendidoled.jpg" alt="..." /></figure>
-                        
+                                src="img/xampp.jpg" alt="..." /></figure>
+                        <p>Al cargar el codigo en la carpeta htdocs del servidor XAMPP podemos acceder a el mediante la IP asignada por el router, donde verificamos que efectivamente se muestre la pagina para posteriormente poder cambiar los valores de las variables 
+                            .
+                        </p>
                     </div>
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                            src="img/encendidoledsim.jpg" alt="..." /></figure>
+                            src="img/codigo.jpg" alt="..." /></figure>
                         
                     </div>
                 </div>
-               <p>Podemos observar el led siempre en encendido en el Pin digital 12</p>
-
                 <h3 class="fs-6 mb-4">Segunda Parte</h3>
                 <div class="row">
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                            src="img/encendidoledsim.jpg" alt="..." /></figure>
+                            src="img/localphp.jpg" alt="..." /></figure>
                     </div>
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="200px"
-                            src="img/apagadoled.jpg" alt="..." /></figure>
-                           
+                            src="img/texto.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Al hacer el envio de los datos verificamos que se actualizan correctamente en el servidor y se escriben en el archivo hola.txt.</p>
                     </div>
                 </div>
-                <p>Podemos observar el led siempre en apagado en el Pin digital 12</p>
-
-                <h3 class="fs-6 mb-4">Tercera parte</h3>
-                <div class="row">
+                <h3>Tercera parte</h3>
+                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="800px"
+                    src="img/frank.jpg" alt="..." /></figure>
                     <div class="col">
-                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
-                            <source src="videos/blink.mp4" type="video/mp4">
-                    </div>
-                    <div class="col">
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                            src="img/encendidoledsim.jpg" alt="..." /></figure>
-                    </div>
-                </div>
-                <p>Podemos observar el led encendiendo y apagado con un delay de 1 seg en el Pin digital 12</p>
-
-                    <h3  class="fs-6 mb-4">Cuarta parte</h3>
+                            <p class="fs-6 mb-4">Para este ejemplo, una computadora sirvio como servidor y otra como la que realiza la peticion, ambas conectadas a un red de internet celular para simular la red local.</p>
+                    
+                    <h3>Cuarta parte</h3>
                  <div class="row">
                     <div class="col">
                         <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                                src="img/boton.jpg" alt="..." /></figure>
+                                src="img/webphp.jpg" alt="..." /></figure>
                     </div>
                     <div class="col">
-                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
-                            <source src="videos/boton.mp4" type="video/mp4">
-            
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="250px"
+                            src="img/textoweb.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Al hacer el envio de los datos a la pagina subida en 000webhost verificamos que se actualizan correctamente y se escriben en el archivo hola.txt.</p>
                     </div>
                 </div>
-                <p class="fs-6 mb-4">Podemos observar que al presionar el boton se enciede el led, en vez de usar la resistencia fisica se uso la resistencia pullup incluida en el esp32.</p>
 
-                <h3  class="fs-6 mb-4">Quinta parte</h3>
-                <div class="row">
-                    <div class="col">
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                                src="img/OR.jpg" alt="..." /></figure>
-                    </div>
-                    <div class="col">
-                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
-                            <source src="videos/OR.mp4" type="video/mp4">
-            
-                    </div>
-                </div>
-                <p class="fs-6 mb-4">Podemos observar el comportamiento de una compuerta OR, solo que se uso como pull up en vez de pull down.</p>
                 
+                <h3>Quinta parte</h3>
+                <p>Para esta parte lo que se realizo fue cambiar el metodo GET por POST para enviar los datos al servidor sin la necesidad de escribirlos en la URL, solo se cambio el metodo GET por POST en el codigo de PHP.</p>
+                <figure class="mb-4" align="center"><video width="600" height="450"  controls>
+                    <source src="videos/local.mp4" type="video/mp4">
+                </video></p></figure>
 
-
-                <h3  class="fs-6 mb-4">Sexta parte</h3>
-                <div class="row">
-                    <div class="col">
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px"
-                                src="img/OR.jpg" alt="..." /></figure>
-                    </div>
-                    <div class="col">
-                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
-                            <source src="videos/AND.mp4" type="video/mp4">
-            
-                    </div>
-                </div>
-                <p class="fs-6 mb-4">Podemos observar el comportamiento de una compuerta AND, solo que se uso como pull up en vez de pull down.</p>
-
-               
+                <h3>Sexta Parte</h3>
+                <p>Para enviar los datos al servidor en la nube solo es necesario cambiar la URL donde esta alojado el servicio.</p>
+                <figure class="mb-4" align="center"><video width="600" height="450"  controls>
+                    <source src="videos/nube.mp4" type="video/mp4">
+                </video></p></figure>
   
             
             <p id="conclusiones">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-            <p class="fs-6 mb-4">Estos sencillos circuitos sirvieron para repasar conceptos basicos de conexiones y programacion del ESP32 para posteriormente diseñar circuitos e implementar codigos para complejos</p>
+            <p class="fs-6 mb-4">Esta practica sirvio bastante para tener un primer acercamiento a como pueden interactuar dipositivos fisicos, con servicios web y otros elementos para poder tener aplicaciones web que obtengan y manejen datos de muchas fuentes.</p>
 
 
             <p id="referencias">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-            <p> ESP32 Hardware Reference. https://demo-dijiudu.readthedocs.io/en/latest/hw-reference/
+            <p> - M. Reyes, Comunicaciones digitales, 1.ª ed. Universidad Autónoma Metropolitana, 2017. [En línea]. Disponible en: https://casadelibrosabiertos.uam.mx/gpd-comunicaciones-digitales.html
             </p>
             <p id="descargables">
             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>    	
-            <a href="files/codigos.rar" download="Practicas.rar">Descargar codigos</a>
+            <a href="files/POSTESp32.rar" download="Practica.rar">Descargar codigos</a>
 
         </div>
     </section>

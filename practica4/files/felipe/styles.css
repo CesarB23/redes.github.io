@@ -1,0 +1,110 @@
+.titulo1{
+    color: darkorchid;
+    text-align: center;
+    background-color: lavender;
+}
+.texto1{
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.titulo2{
+    color: navy;
+    text-align: center;
+    background-color: lavenderblush;
+}
+.texto2{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.titulo3{
+    color: darkgreen;
+    text-align: center;
+    background-color: mistyrose;
+}
+.texto3{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.titulo4{
+    color: darkgoldenrod;
+    text-align: center;
+    background-color: lightblue;
+}
+.texto4{
+    font-family: 'Rockwell', serif;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.titulo5{
+    color: purple;
+    text-align: center;
+    background-color: lightcyan;
+}
+.texto5{
+    font-family: 'Courier', monospace;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.titulo6{
+    color: firebrick;
+    text-align: center;
+    background-color: lightgray;
+}
+.texto6{
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.titulo7{
+    color: teal;
+    text-align: center;
+    background-color: lightpink;
+}
+.texto7{
+    font-family: 'Verdana', Geneva, sans-serif;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.titulo8{
+    color: darkslateblue;
+    text-align: center;
+    background-color: lightyellow;
+}
+.texto8{
+    font-family: 'Segoe Print', 'Segoe Script', cursive;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.titulo9{
+    color: darkviolet;
+    text-align: center;
+    background-color: honeydew;
+}
+.texto9{
+    font-family: 'Cambria Math', serif;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.titulo10{
+    color: slateblue;
+    text-align: center;
+    background-color: ivory;
+}
+.texto10{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 16pt;
+    text-align: justify;
+}
+

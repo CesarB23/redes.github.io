@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('Estadio.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; /* Ajuste para cubrir completamente el fondo */
+            color: #ffffff; /* Blanco */
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            height: 100vh; /* Altura completa de la ventana */
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* Negro transparente */
+            border-radius: 20px; /* Radio del recuadro */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: left;
+            width: 300px;
+            color: #ffffff; /* Blanco */
+            height: auto; /* Ajusta la altura automáticamente según el contenido */
+            max-height: 420px; /* Altura máxima del contenedor */
+        }
+
+        .titulo-sesion {
+            background-color: #dc3545; /* Rojo Bayern München */
+            color: #ffffff; /* Blanco */
+            padding: 10px 0; /* Ajustamos el padding para separar el título del borde superior */
+            text-align: center; /* Centramos el texto horizontalmente */
+            margin-top: 0; /* Opcional: remueve el margen superior si es necesario */
+            margin-bottom: 0px; /* Opcional: agrega margen inferior para separarlo de los siguientes elementos */
+            border-radius: 20px;
+            width: 100%; /* Aseguramos que el título ocupe todo el ancho del contenedor */
+        }
+
+        input[type=text], input[type=password] {
+            border: 1px solid #007bff; /* Azul Bayern München */
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 10px;
+            width: calc(100% - 22px); /* 100% - padding & border */
+        }
+
+        input[type=submit] {
+            background-color: #007bff; /* Azul Bayern München */
+            border: none;
+            border-radius: 5px;
+            color: #ffffff; /* Blanco */
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #0056b3; /* Azul oscuro */
+        }
+
+        a {
+            color: #28a745; /* Verde Bayern München */
+            text-decoration: none;
+        }
+
+        .schnauzer-theme {
+            background-image: url('Estadio.png'); 
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: 100px;
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container schnauzer-theme">
+    <p class="titulo-sesion">Crear Usuario</p>
+    <form action="usuario.php">
+        <p>Usuario:</p>
+        <input type="text" id="usuario" name="usuario">
+        <p>Contraseña:</p>
+        <input type="password" id="psw" name="psw">
+        <p>Confirmar contraseña:</p>
+        <input type="password">
+        <br><br>
+        <input type="submit" value="Crear nuevo usuario">
+    </form>
+    <br>
+    <p>Regresar-<a href="index.php">Click aquí</a></p>
+    <p>Luis Felipe</p>
+</div>
+
+</body>
+</html>
+
